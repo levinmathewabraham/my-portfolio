@@ -24,6 +24,14 @@
     background-color: #E1F7F5;
 }
 
+.skills {
+    background-color: #E1F7F5;
+}
+
+.achievements {
+    background-color: #E1F7F5;
+}
+
 .hobby {
     background-color: #E1F7F5;
 }
@@ -44,4 +52,14 @@
 .exp-head {
     font-size: 25px;
     font-weight: bold;
+}
+
+.achievements-head {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.skill-sets {
+    display: flex;
+    justify-content: space-between;
 }
