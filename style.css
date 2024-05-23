@@ -1,6 +1,6 @@
 .ubuntu-regular {
     font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -57,9 +57,4 @@
 .achievements-head {
     font-size: 25px;
     font-weight: bold;
-}
-
-.skill-sets {
-    display: flex;
-    justify-content: space-between;
 }
