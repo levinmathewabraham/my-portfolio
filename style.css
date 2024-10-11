@@ -1,7 +1,5 @@
 .ubuntu-regular {
     font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
 }
 
 #header-section {
@@ -12,53 +10,37 @@
     background-color: #9AC8CD;
 }
 
-.profile {
-    background-color: #E1F7F5;
-}
-
-.education {
-    background-color: #E1F7F5;
-}
-
-.experience {
-    background-color: #E1F7F5;
-}
-
-.skills {
-    background-color: #E1F7F5;
-}
-
-.certification {
-    background-color: #E1F7F5;
-}
-
-.achievements {
-    background-color: #E1F7F5;
-}
-
-.hobby {
-    background-color: #E1F7F5;
-}
-
-.contact {
-    background-color: #E1F7F5;
-}
-
-#footer-section {
+.wrapper {
     background-color: #9AC8CD;
+}
+
+.profile, .education, .projects, .experience, .skills, .certification, .achievements, .hobby, .contact {
+    background-color: #E1F7F5;
+    border-radius: 10px;
 }
 
 .course {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
-.exp-head {
+.proj-head, .exp-head, .achievements-head, .hobby-head {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
-.achievements-head {
-    font-size: 25px;
-    font-weight: bold;
+.links {
+    text-decoration: none;
+}
+
+.restPic {
+    width: 50%;
+}
+
+.hobby-row {
+    display: flex;
+}
+
+#footer-section {
+    background-color: #9AC8CD;
 }
