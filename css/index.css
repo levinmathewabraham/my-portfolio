@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #E0E0E0;
+    --secondary-color: #FF6F61;
+    --background-color: #121212;
+    --hover-color: #FF4500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    background: radial-gradient(circle, var(--background-color) 75%, rgba(255, 111, 97, 1) 100%);
+}
+
+.navbar {
+    background: var(--background-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--secondary-color);
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--background-color);
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.navbar-brand:hover {
+    color: var(--hover-color);
+}
+
+.navbar-toggler {
+    border: var(--secondary-color) solid 1px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+
+.welcome-text {
+    color: var(--primary-color);
+}
+
+.sub-text {
+    color: var(--secondary-color);
+}
+
+.sub-text-mobile {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.section-head {
+    color: var(--primary-color);
+}
+
+.card {
+    background: var(--background-color);
+    color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(255, 111, 97, 0.2);
+}
+
+#technologies-section {
+    background-color: #000;
+}
+
+.tech-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 2rem;
+}
+
+.tech-slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.tech-slider-track img {
+    height: 80px;
+    margin: 0 30px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.live-link-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.project-card:hover .live-link-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.project-card:hover .card-img-top {
+    filter: blur(5px);
+}
+
+.badge {
+    background-color: var(--secondary-color);
+    border: var(--hover-color) solid 1px;
+    border-radius: 10px;
+}
+
+.bi {
+    color: var(--secondary-color);
+}
+
+.socialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 52px;
+    height: 52px;
+    background-color: var(--secondary-color);
+    transition-duration: .3s;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+.linkedin:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+.github:hover {
+    background-color: #2B3137;
+    transition-duration: .3s;
+}
+
+.gmail:hover {
+    background-color: #C71610;
+    transition-duration: .3s;
+}
+
+.whatsapp:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.socialSvg path {
+    fill: var(--primary-color);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-down 0.3s both;
+}
+
+@keyframes slide-in-down {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-label {
+    color: var(--primary-color);
+}
+
+.form-control {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: var(--secondary-color) solid 1px;
+}
+
+.form-control::placeholder {
+    color: #868e96;
+}
+
+.form-control:focus {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    outline: 0;
+    box-shadow:  0 0 0 0.25rem rgba(255, 111, 97, 0.25);
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--hover-color) solid 1px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: var(--hover-color) solid 1px;
+    transform: scale(1.05);
+}
+
+#footer-section {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
