@@ -14,6 +14,7 @@
 body {
     background: #121212;
     background: radial-gradient(circle, var(--background-color) 75%, rgba(255, 111, 97, 1) 100%);
+    overflow-x: hidden;
 }
 
 .navbar {
